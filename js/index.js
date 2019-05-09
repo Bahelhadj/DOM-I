@@ -42,12 +42,33 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Navigation
-let navcontent = document.querySelectorAll('a');
-navcontent[0].textcontent = siteContent['nav']['nav-item-1'];
-navcontent[1].textcontent = siteContent['nav']['nav-item-2'];
-navcontent[2].textcontent = siteContent['nav']['nav-item-3'];
-navcontent[3].textcontent = siteContent['nav']['nav-item-4'];
-navcontent[4].textcontent = siteContent['nav']['nav-item-5'];
-navcontent[5].textcontent = siteContent['nav']['nav-item-6'];
+// This didnt seem to work, so i went with the example below
+// let navcontent = document.querySelectorAll("a");
+// navcontent[0].textcontent = siteContent["nav"]["nav-item-1"];
+// navcontent[1].textcontent = siteContent["nav"]["nav-item-2"];
+// navcontent[2].textcontent = siteContent["nav"]["nav-item-3"];
+// navcontent[3].textcontent = siteContent["nav"]["nav-item-4"];
+// navcontent[4].textcontent = siteContent["nav"]["nav-item-5"];
+// navcontent[5].textcontent = siteContent["nav"]["nav-item-6"];
+
+let navcont = document.querySelectorAll("a");
+navcont[0].innerHTML = "Services";
+navcont[1].innerHTML = "Product";
+navcont[2].innerHTML = "Vision";
+navcont[3].innerHTML = "Features";
+navcont[4].innerHTML = "About";
+navcont[5].innerHTML = "Content";
+
+//DomAwesomeSection
+document.querySelector("h1").innerHTML = "DOM<br>Is<br>Awesome";
+document.querySelector("button").innerHTML = "Get Started";
+document.getElementById("cta-img").setAttribute('src', siteContent["cta"]["img-src"]);
+
+//lastimagesection
+document.getElementById("middle-img").setAttribute("src", siteContent["main-content"]["middle-img-src"])
+
+
+
+
 
 
